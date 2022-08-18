@@ -5,4 +5,5 @@ El juego de Gato o también llamado "tres en línea" es un juego en el que parti
 Considero que este es un proyecto interesante debido a que en este caso el usuario jugará contra una computadora, además de que hay muchas formas de programar el algoritmo para que la computadora tome decisiones. Este es un buen proyecto para enseñar a principiantes los fundamentos de la programación.
 
 ### Algoritmo (borrador)
-![image](https://user-images.githubusercontent.com/111411033/185157477-3bd48918-bd56-40a2-a898-25e7542bfc05.png)
+![image](https://user-images.githubusercontent.com/111411033/185513282-24493078-9c65-4e67-b35d-50245e9c3fcb.png)
+
