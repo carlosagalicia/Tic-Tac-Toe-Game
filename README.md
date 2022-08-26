@@ -6,3 +6,9 @@ Considero que este es un proyecto interesante debido a que en este caso el usuar
 ### Algoritmo (borrador)
 ![image](https://user-images.githubusercontent.com/111411033/185513282-24493078-9c65-4e67-b35d-50245e9c3fcb.png)
 
+### Instrucciones para la ejecución del programa
+Descargar el archivo
+Ejecutar en terminal con el comando:
+    
+    python proyecto_gato.py
+    
