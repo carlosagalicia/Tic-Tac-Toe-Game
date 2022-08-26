@@ -8,6 +8,7 @@ Considero que este es un proyecto interesante debido a que en este caso el usuar
 
 ### Instrucciones para la ejecución del programa
 Descargar el archivo
+
 Ejecutar en terminal con el comando:
     
     python proyecto_gato.py
