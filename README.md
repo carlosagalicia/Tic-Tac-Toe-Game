@@ -19,5 +19,5 @@ Descargar el archivo
 
 Ejecutar en terminal con el comando:
     
-    python proyecto_gato.py
+    python gato.py
     
