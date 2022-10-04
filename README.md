@@ -9,10 +9,11 @@ Considero que este es un proyecto interesante debido a que en este caso el usuar
 ### Prerrequisitos
 Tener la librería "pygame" instalada previamente
 
-#### Instrucciones para la instalación de la libreria pygame
+#### Instrucciones para la instalación de las librerias pygame y random
 (Windows) Ejecutar en terminal el comando:
 
     python -m pip install pygame
+    python -m pip install random
     
 ### Instrucciones para la ejecución del programa
 Descargar el archivo
