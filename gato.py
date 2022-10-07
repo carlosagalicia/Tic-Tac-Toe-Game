@@ -2083,6 +2083,25 @@ def boton_salir_o_jugar(ventana, ancho, text):
 
 
 """
+============================================= funciones de prueba  ==============================================
+================================== funciones que reciben matrices como parámetros ===============================
+"""
+
+
+def prueba():
+    # entrada matriz gato = [["x", "o", "o"], ["x", "o", "x"], ["x", "o", ""]]
+    # salida string "x"
+    gato = [["x", "o", "o"], ["x", "o", "x"], ["x", "o", ""]]
+    print(evaluar(gato))
+    # entrada matriz gato = [["x", "o", "o"], ["x", "o", "x"], ["x", "o", ""]]
+    # salida matriz
+    # ['x', 'o', 'o']
+    # ['x', 'o', 'x']
+    # ['x', 'o', '']
+    imprime_matriz(gato)
+
+
+"""
 ============================================= funcion principal main  ==============================================
 """
 
@@ -2183,3 +2202,5 @@ def main():
 jugada = 0
 forma = "x"
 main()
+# la función prueba ejecuta las 2 funciones que pueden recibir parametros y retornar datos tipo string u otras matrices
+# prueba()
