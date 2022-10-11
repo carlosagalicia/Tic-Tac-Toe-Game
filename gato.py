@@ -1760,7 +1760,7 @@ def machine(ventana, blanco, gato):
     gato[fila][columna] = "o"
 
 
-def randommachine(ventana, blanco, gato):
+def random_machine(ventana, blanco, gato):
     """
     (uso de funciones, uso de operadores, uso de condicionales, uso de estructuras ciclicas for/while, uso de
     listas/matrices)
@@ -1829,7 +1829,7 @@ def randommachine(ventana, blanco, gato):
     gato[fila][columna] = "o"
 
 
-def clasificarx(ventana, blanco, gato, juego):
+def clasificar_x(ventana, blanco, gato, juego):
     """
     (uso de funciones, uso de operadores, uso de condicionales, uso de listas/matrices)
     recibe: "ventana" valor clase pygame.Surface, "blanco" tupla de valores numericos, "gato" matriz de tamaño 3x3 con
@@ -1902,7 +1902,7 @@ def clasificarx(ventana, blanco, gato, juego):
         pygame.draw.line(ventana, blanco, (c_x + 80, c_y + 80), (c_x - 80, c_y - 80), 3)
         pygame.draw.line(ventana, blanco, (c_x + 80, c_y - 80), (c_x - 80, c_y + 80), 3)
         if juego == "pvr":
-            randommachine(ventana, blanco, gato)
+            random_machine(ventana, blanco, gato)
         if juego == "pvc":
             machine(ventana, blanco, gato)
     imprime_matriz(gato)
@@ -2154,7 +2154,7 @@ def main():
                 if juego == "pvp":
                     clasificar(ventana, blanco, gato)
                 elif juego == "pvr" or "pvc":
-                    clasificarx(ventana, blanco, gato, juego)
+                    clasificar_x(ventana, blanco, gato, juego)
                 ganador = evaluar(gato)
                 if ganador != "":
                     text = "¡El ganador es " + str(ganador) + "!"
