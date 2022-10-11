@@ -74,10 +74,14 @@ def dibujar_gato(ventana, blanco, alto, ancho):
         Dibuja las 4 lineas blancas que integraran el area de juego de gato
         devuelve: no devuelve ningun valor
         """
-    pygame.draw.line(ventana, blanco, (ancho // 3, alto), ((ancho // 3), (alto * -1)), 3)
-    pygame.draw.line(ventana, blanco, ((ancho // 3)*2, alto), ((ancho // 3)*2, (alto * -1)), 3)
-    pygame.draw.line(ventana, blanco, (ancho, alto // 3), (ancho * -1, alto // 3), 3)
-    pygame.draw.line(ventana, blanco, (ancho, (alto // 3)*2), (ancho * -1, (alto // 3)*2), 3)
+    pygame.draw.line(ventana, blanco, (ancho // 3, alto),
+                     ((ancho // 3), (alto * -1)), 3)
+    pygame.draw.line(ventana, blanco, ((ancho // 3)*2, alto),
+                     ((ancho // 3)*2, (alto * -1)), 3)
+    pygame.draw.line(ventana, blanco, (ancho, alto // 3),
+                     (ancho * -1, alto // 3), 3)
+    pygame.draw.line(ventana, blanco, (ancho, (alto // 3)*2),
+                     (ancho * -1, (alto // 3)*2), 3)
 
 
 """
@@ -435,7 +439,8 @@ def machine(ventana, blanco, gato):
 
     # tercer turno
     if jugada == 12:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][1] == "x" \
+                or gato[2][2] == "x":
             fila = 2
             columna = 0
         if gato[2][0] == "x":
@@ -443,7 +448,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 127
     if jugada == 13:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 1
         if gato[2][1] == "x":
@@ -451,7 +457,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 138
     if jugada == 14:
-        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 0
             columna = 2
         if gato[0][2] == "x":
@@ -459,7 +466,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 143
     if jugada == 16:
-        if gato[0][2] == "x" or gato[1][0] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[0][2] == "x" or gato[1][0] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 1
         if gato[2][1]:
@@ -467,7 +475,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 168
     if jugada == 17:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 1
             columna = 2
         if gato[1][2] == "x":
@@ -475,7 +484,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 176
     if jugada == 18:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 1
             columna = 2
         if gato[1][2] == "x":
@@ -483,7 +493,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 186
     if jugada == 19:
-        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0]:
+        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or \
+                gato[2][0]:
             fila = 2
             columna = 1
         if gato[2][1]:
@@ -491,7 +502,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 198
     if jugada == 23:
-        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 0
         if gato[2][0]:
@@ -520,7 +532,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 259
     if jugada == 26:
-        if gato[0][2] == "x" or gato[1][1] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[0][2] == "x" or gato[1][1] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 1
             columna = 0
         if gato[1][0] == "x":
@@ -528,7 +541,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 264
     if jugada == 27:
-        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or gato[2][1] == "x":
+        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2]:
@@ -536,7 +550,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 279
     if jugada == 28:
-        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x":
+        if gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or \
+                gato[2][0] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -565,7 +580,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 298
     if jugada == 32:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -573,7 +589,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 329
     if jugada == 36:
-        if gato[0][1] == "x" or gato[1][0] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[0][1] == "x" or gato[1][0] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 0
             columna = 0
         if gato[0][0] == "x":
@@ -581,7 +598,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 361
     if jugada == 37:
-        if gato[0][0] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or gato[2][2] == "x":
+        if gato[0][0] == "x" or gato[1][0] == "x" or gato[1][2] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 1
         if gato[2][1] == "x":
@@ -589,7 +607,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 378
     if jugada == 38:
-        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 1
             columna = 2
         if gato[1][2] == "x":
@@ -597,7 +616,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 386
     if jugada == 39:
-        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 1
             columna = 0
         if gato[1][0] == "x":
@@ -605,7 +625,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 394
     if jugada == 42:
-        if gato[0][2] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[0][2] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -613,7 +634,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 429
     if jugada == 43:
-        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -642,7 +664,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 459
     if jugada == 46:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -650,7 +673,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 469
     if jugada == 47:
-        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 0
             columna = 2
         if gato[0][2] == "x":
@@ -658,7 +682,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 473
     if jugada == 48:
-        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -666,7 +691,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 482
     if jugada == 49:
-        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[1][1] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -674,7 +700,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 429
     if jugada == 53:
-        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[0][1] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 1
             columna = 0
         if gato[1][0] == "x":
@@ -682,7 +709,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 453
     if jugada == 56:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 0
         if gato[2][0] == "x":
@@ -690,7 +718,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 567
     if jugada == 57:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or gato[2][2] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][1] == "x" or \
+                gato[2][2] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -698,7 +727,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 257
     if jugada == 58:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][2] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][2] == "x":
             fila = 0
             columna = 2
         if gato[0][2] == "x":
@@ -706,7 +736,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 583
     if jugada == 59:
-        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[1][0] == "x" or gato[1][2] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -756,7 +787,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 629
     if jugada == 64:
-        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][2] == "x" or gato[2][1] == "x":
+        if gato[0][0] == "x" or gato[0][1] == "x" or gato[2][2] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 0
         if gato[2][0] == "x":
@@ -785,7 +817,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 659
     if jugada == 67:
-        if gato[2][2] == "x" or gato[2][1] == "x" or gato[1][0] == "x" or gato[1][1] == "x":
+        if gato[2][2] == "x" or gato[2][1] == "x" or gato[1][0] == "x" or \
+                gato[1][1] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -793,7 +826,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 672
     if jugada == 68:
-        if gato[2][2] == "x" or gato[2][0] == "x" or gato[1][0] == "x" or gato[1][1] == "x":
+        if gato[2][2] == "x" or gato[2][0] == "x" or gato[1][0] == "x" or \
+                gato[1][1] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -801,7 +835,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 682
     if jugada == 69:
-        if gato[1][0] == "x" or gato[1][1] == "x" or gato[2][0] == "x" or gato[2][1] == "x":
+        if gato[1][0] == "x" or gato[1][1] == "x" or gato[2][0] == "x" or \
+                gato[2][1] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -809,7 +844,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 692
     if jugada == 74:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[1][2] == "x" or gato[2][1] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[1][2] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 2
         if gato[2][2] == "x":
@@ -817,7 +853,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 749
     if jugada == 76:
-        if gato[0][0] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or gato[2][2] == "x":
+        if gato[0][0] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or \
+                gato[2][2] == "x":
             fila = 2
             columna = 1
         if gato[2][1] == "x":
@@ -825,7 +862,8 @@ def machine(ventana, blanco, gato):
             columna = 2
             jugada = 768
     if jugada == 78:
-        if gato[0][1] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x":
+        if gato[0][1] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or \
+                gato[1][2] == "x":
             fila = 0
             columna = 0
         if gato[0][0] == "x":
@@ -833,7 +871,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 781
     if jugada == 79:
-        if gato[0][0] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or gato[1][2] == "x":
+        if gato[0][0] == "x" or gato[0][2] == "x" or gato[1][0] == "x" or \
+                gato[1][2] == "x":
             fila = 0
             columna = 1
         if gato[0][1] == "x":
@@ -988,7 +1027,8 @@ def machine(ventana, blanco, gato):
             columna = 0
             jugada = 948
     if jugada == 96:
-        if gato[0][1] == "x" or gato[0][0] == "x" or gato[1][0] == "x" or gato[2][1] == "x":
+        if gato[0][1] == "x" or gato[0][0] == "x" or gato[1][0] == "x" or \
+                gato[2][1] == "x":
             fila = 2
             columna = 0
         if gato[2][0] == "x":
@@ -996,7 +1036,8 @@ def machine(ventana, blanco, gato):
             columna = 1
             jugada = 967
     if jugada == 98:
-        if gato[0][0] == "x" or gato[0][1] == "x" or gato[1][0] == "x" or gato[1][2] == "x":
+        if gato[0][0] == "x" or gato[0][1] == "x" or gato[1][0] == "x" or \
+                gato[1][2] == "x":
             fila = 0
             columna = 2
         if gato[0][2] == "x":
@@ -1899,8 +1940,10 @@ def clasificar_x(ventana, blanco, gato, juego):
 
     if gato[fila][columna] == "":
         gato[fila][columna] = "x"
-        pygame.draw.line(ventana, blanco, (c_x + 80, c_y + 80), (c_x - 80, c_y - 80), 3)
-        pygame.draw.line(ventana, blanco, (c_x + 80, c_y - 80), (c_x - 80, c_y + 80), 3)
+        pygame.draw.line(ventana, blanco, (c_x + 80, c_y + 80),
+                         (c_x - 80, c_y - 80), 3)
+        pygame.draw.line(ventana, blanco, (c_x + 80, c_y - 80),
+                         (c_x - 80, c_y + 80), 3)
         if juego == "pvr":
             random_machine(ventana, blanco, gato)
         if juego == "pvc":
@@ -1980,8 +2023,10 @@ def clasificar(ventana, blanco, gato):
     if gato[fila][columna] == "":
         gato[fila][columna] = forma
         if forma == "x":
-            pygame.draw.line(ventana, blanco, (c_x + 80, c_y + 80), (c_x - 80, c_y - 80), 3)
-            pygame.draw.line(ventana, blanco, (c_x + 80, c_y - 80), (c_x - 80, c_y + 80), 3)
+            pygame.draw.line(ventana, blanco, (c_x + 80, c_y + 80),
+                             (c_x - 80, c_y - 80), 3)
+            pygame.draw.line(ventana, blanco, (c_x + 80, c_y - 80),
+                             (c_x - 80, c_y + 80), 3)
             forma_colocada = "x"
             forma = "o"
         else:
