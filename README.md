@@ -1,24 +1,26 @@
-# **Juego de Gato**
-### Contexto
-El juego de Gato o también llamado "tres en línea" es un juego en el que participan 2 jugadores. Cada uno participa con un símbolo diferente, usualmente una "x" y un "o", con el objetivo de que uno de los jugadores coloque 3 de sus símbolos de forma alineada, ya sea en diagonal, vertical u horizontalmente.
-Considero que este es un proyecto interesante debido a que en este caso el usuario jugará contra una computadora, además de que hay muchas formas de programar el algoritmo para que la computadora tome decisiones. Este es un buen proyecto para enseñar a principiantes los fundamentos de la programación.
+# **Tic-Tac-Toe Game**
 
-### Algoritmo (borrador)
+### Context
+Tic-Tac-Toe, also known as "Three in a Row," is a game for two players. Each player uses a different symbol, typically an "X" and an "O," with the goal of placing three of their symbols in a row, either diagonally, vertically, or horizontally. 
+
+This project is interesting because, in this case, the user will play against a computer. Additionally, there are many ways to program the algorithm for the computer to make decisions. It is an excellent project for teaching beginners the fundamentals of programming.
+
+### Algorithm (Draft)
 ![image](https://user-images.githubusercontent.com/111411033/185513282-24493078-9c65-4e67-b35d-50245e9c3fcb.png)
 
-### Prerrequisitos
-Tener la librería "pygame" instalada previamente
+### Prerequisites
+Ensure the "pygame" library is installed beforehand.
 
-#### Instrucciones para la instalación de las librerias pygame y random
-(Windows) Ejecutar en terminal el comando:
+#### Instructions for Installing the `pygame` and `random` Libraries
+For Windows, execute the following commands in the terminal:
+```bash
+python -m pip install pygame
+python -m pip install random
+```
+### Instructions for Running the Program
+Download the file.
 
-    python -m pip install pygame
-    python -m pip install random
-    
-### Instrucciones para la ejecución del programa
-Descargar el archivo
-
-Ejecutar en terminal con el comando:
-    
-    python gato.py
-    
+Execute the program in the terminal using the command:
+```bash
+python gato.py
+```
